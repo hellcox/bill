@@ -31,4 +31,16 @@ class Common extends CI_Controller
 
         }
     }
+
+    public function resJson($code = 0,$msg = 'success',$data = null)
+    {
+        header('Content-Type:application/json; charset=utf-8');
+        $arr = [
+            'code'=>$code,
+            'msg'=>$msg,
+            'data'=>$data
+        ];
+        echo json_encode($arr);
+        exit();
+    }
 }

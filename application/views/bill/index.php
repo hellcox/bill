@@ -15,7 +15,7 @@
 
             <div class="mb-20"></div>
             <form class="layui-form" action="">
-                <select name="type">
+                <select name="tag" id="tag">
                     <option value="1">测试</option>
                     <option value="2">进入</option>
                 </select>
@@ -35,11 +35,20 @@
 <script>
     function doout() {
         var url = "<?=site_url('bill/doout')?>";
-        var money = "1";
-        var data = {"money":money,"type":1,"note":"222"};
+        var tag = $("#tag").find("option:selected").val();
+        var money = $("input[name='money']").val();
+        var note = $("input[name='note']").val();
+        var data = {"money":money,"tag":tag,"note":note};
 
-        $.post(url,data, function(data) {
-            layer.msg("111111111");
+        $.post(url,data, function(res) {
+            var code = res.code;
+            if(code==0){
+                layer.msg(res.msg,{time:1500},function () {
+                    location.reload();
+                });
+            }else{
+                layer.msg(res.msg);
+            }
         });
     }
 </script>
