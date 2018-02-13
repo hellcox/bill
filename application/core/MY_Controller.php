@@ -26,6 +26,7 @@ class Common extends CI_Controller
             $this->load->view("public/data", $this->data); //用于返回数据
             $this->load->view("public/header");
             empty($view) ? '' : $this->load->view($view);
+            $this->load->view("public/menu");
             $this->load->view("public/footer");
         } else {
 
