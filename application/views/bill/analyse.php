@@ -26,7 +26,7 @@
                 <li class="layui-timeline-item">
                     <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
                     <div class="layui-timeline-content layui-text">
-                        <h3 class="layui-timeline-title"><?=date('Y年m月d日 H:i:s')?></h3>
+                        <h3 class="layui-timeline-title"><?=date('Y年m月d日 H:i:s',$value['add_time'])?></h3>
                         <ul>
                             <li>金额：<?=$value['money']?></li>
                             <li>类型：<?php if($value['type']==1){echo '消费';}else{echo '收入';}?></li>

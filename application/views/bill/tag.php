@@ -7,9 +7,9 @@
     <div class="layui-row">
         <div class="layui-col-xs12">
 
-            <div style="text-align: center">
-                <a class="layui-btn layui-btn-xs layui-btn-normal" href="<?= site_url() ?>">首页</a>
-            </div>
+            <!--<div style="text-align: center">-->
+            <!--    <a class="layui-btn layui-btn-xs layui-btn-normal" href="--><?//= site_url() ?><!--">首页</a>-->
+            <!--</div>-->
 
             <div class="mb-20"></div>
             <form class="layui-form" action="">

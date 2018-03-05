@@ -7,9 +7,9 @@
     <div class="layui-row">
         <div class="layui-col-xs12">
 
-            <div style="text-align: center">
-                <a class="layui-btn layui-btn-xs layui-btn-normal" href="<?= site_url() ?>">首页</a>
-            </div>
+            <!--<div style="text-align: center">-->
+            <!--    <a class="layui-btn layui-btn-xs layui-btn-normal" href="--><?//= site_url() ?><!--">首页</a>-->
+            <!--</div>-->
 
             <div class="mb-20"></div>
             <form class="layui-form" action="">
@@ -24,7 +24,7 @@
                 <input type="text" name="note" placeholder="说明" class="layui-input mb-20">
             </form>
 
-            <button id="btn-in" class="layui-btn layui-btn-normal" style="width: 100%" onclick="doin()">IN</button>
+            <button id="btn-in" class="layui-btn layui-btn-normal" style="width: 100%" onclick="doin()">收入</button>
 
         </div>
     </div>

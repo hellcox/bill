@@ -7,11 +7,11 @@
     <div class="layui-row">
         <div class="layui-col-xs12">
 
-            <div style="text-align: center">
-                <a class="layui-btn layui-btn-xs layui-btn-normal" href="<?= site_url('bill/in') ?>">收入</a>
-                <a class="layui-btn layui-btn-xs layui-btn-normal" href="<?= site_url('bill/analyse') ?>">统计</a>
-                <a class="layui-btn layui-btn-xs layui-btn-normal" href="<?= site_url('bill/tag') ?>">标签</a>
-            </div>
+            <!--<div style="text-align: center">-->
+            <!--    <a class="layui-btn layui-btn-xs layui-btn-normal" href="--><?//= site_url('bill/in') ?><!--">收入</a>-->
+            <!--    <a class="layui-btn layui-btn-xs layui-btn-normal" href="--><?//= site_url('bill/analyse') ?><!--">统计</a>-->
+            <!--    <a class="layui-btn layui-btn-xs layui-btn-normal" href="--><?//= site_url('bill/tag') ?><!--">标签</a>-->
+            <!--</div>-->
 
             <div class="mb-20"></div>
             <form class="layui-form" action="">
@@ -26,7 +26,7 @@
                 <input type="text" name="note" placeholder="说明" class="layui-input mb-20">
             </form>
 
-            <button id="btn-out" class="layui-btn layui-btn-normal" style="width: 100%" onclick="doout()">OUT</button>
+            <button id="btn-out" class="layui-btn layui-btn-normal" style="width: 100%" onclick="doout()">消费</button>
 
         </div>
     </div>
